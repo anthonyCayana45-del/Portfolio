@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Anthony | Systems-Focused Developer, Security Researcher & Game Tooling Engineer building resilient web applications and interactive systems.">
+  <title>Anthony | Systems Developer & Security Enthusiast</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <canvas id="particleCanvas" aria-hidden="true"></canvas>
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+      <a href="#about" class="brand-logo" aria-label="Anthony Portfolio Home">
+        <span class="logo-mark">A</span>
+        <span class="logo-text">Anthony<span class="logo-accent">is-a.dev</span></span>
+      </a>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#about" class="nav-link active">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section" id="about">
+      <div class="container hero-container">
+
+        <div class="profile-wrapper">
+          <div class="profile-glow"></div>
+          <div class="profile-frame">
+            <img src="assets/wv0lyhtm.jpg" alt="Anthony Profile Picture" class="profile-image">
+            <div class="status-indicator" title="Available for work" aria-label="Status: Available for work">
+              <span class="status-dot"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span class="badge-dot"></span>
+            <span>Building, breaking & securing systems</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-highlight">Anthony</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Full-Stack Developer, Security Researcher & Systems Builder
+          </p>
+
+          <p class="hero-bio">
+            I don't just build interfaces—I dissect how systems work under the hood. From architecting full-stack web
+            applications and real-time community platforms to exploring penetration testing, Linux environments, and
+            game engine logic, I focus on engineering fast, resilient, and functional digital experiences.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span>
+              <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Get in Touch</span>
+            </a>
+          </div>
+
+          <div class="skills-wrapper">
+            <span class="skill-tag">JavaScript / TypeScript</span>
+            <span class="skill-tag">React & Next.js</span>
+            <span class="skill-tag">Linux & Bash</span>
+            <span class="skill-tag">Cybersecurity / Pentesting</span>
+            <span class="skill-tag">Godot / Game Logic</span>
+            <span class="skill-tag">HTML5 / CSS3 Architecture</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="projects-section" id="projects">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag">Portfolio</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-desc">
+            A selection of hands-on builds spanning full-stack web architecture, interactive game systems, and
+            security-focused tooling.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+
+          <article class="project-card">
+            <div class="card-visual">
+              <div class="visual-header">
+                <span class="window-dot red"></span>
+                <span class="window-dot yellow"></span>
+                <span class="window-dot green"></span>
+                <span class="window-title">iskolar-hub.app</span>
+              </div>
+              <div class="visual-body">
+                <div class="mock-search-row">
+                  <div class="mock-search-bar"></div>
+                  <div class="mock-badge"></div>
+                </div>
+                <div class="mock-resource-item">
+                  <div class="mock-avatar-dot"></div>
+                  <div class="mock-resource-lines">
+                    <div class="mock-line w-70"></div>
+                    <div class="mock-line w-40"></div>
+                  </div>
+                </div>
+                <div class="mock-resource-item">
+                  <div class="mock-avatar-dot"></div>
+                  <div class="mock-resource-lines">
+                    <div class="mock-line w-85"></div>
+                    <div class="mock-line w-50"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <div class="card-tags">
+                <span class="tag">Full-Stack</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">State Architecture</span>
+              </div>
+              <h3 class="card-title">Iskolar: Student Community & Resource Platform</h3>
+              <p class="card-description">
+                A centralized digital hub engineered for student collaboration, featuring structured resource
+                management, responsive layouts, and streamlined state persistence.
+              </p>
+              <div class="card-links">
+                <a href="#contact" class="link-item" aria-label="View live demo of Iskolar Platform">
+                  <span>Live Demo</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="card-visual">
+              <div class="visual-header">
+                <span class="window-dot red"></span>
+                <span class="window-dot yellow"></span>
+                <span class="window-dot green"></span>
+                <span class="window-title">sec-recon-lab.sh</span>
+              </div>
+              <div class="visual-body">
+                <div class="mock-terminal">
+                  <div class="mock-term-line"><span class="term-arrow">&gt;</span> nmap -sV 192.168.1.0/24</div>
+                  <div class="mock-term-line"><span class="term-status">[+]</span> 22/tcp OPEN ssh-v8.9</div>
+                  <div class="mock-term-line"><span class="term-status">[+]</span> 443/tcp OPEN ssl/https</div>
+                  <div class="mock-term-line"><span class="term-cursor"></span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <div class="card-tags">
+                <span class="tag">Linux</span>
+                <span class="tag">Networking</span>
+                <span class="tag">Security Research</span>
+              </div>
+              <h3 class="card-title">Offensive Security & Network Recon Lab</h3>
+              <p class="card-description">
+                Custom virtualized environment and automation scripts for vulnerability analysis, packet inspection, and
+                hands-on penetration testing workflows.
+              </p>
+              <div class="card-links">
+                <a href="#contact" class="link-item" aria-label="View live demo of Security Lab">
+                  <span>Live Demo</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="card-visual">
+              <div class="visual-header">
+                <span class="window-dot red"></span>
+                <span class="window-dot yellow"></span>
+                <span class="window-dot green"></span>
+                <span class="window-title">engine-mechanics.dev</span>
+              </div>
+              <div class="visual-body">
+                <div class="mock-game-scene">
+                  <div class="mock-game-hud">
+                    <div class="mock-health-bar"><div class="mock-health-fill"></div></div>
+                    <div class="mock-mana-bar"></div>
+                  </div>
+                  <div class="mock-game-world">
+                    <div class="mock-player-box"><span class="mock-player-eye"></span></div>
+                    <div class="mock-platform plat-1"></div>
+                    <div class="mock-platform plat-2"></div>
+                    <div class="mock-vector-line"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <div class="card-tags">
+                <span class="tag">Godot</span>
+                <span class="tag">Game Logic</span>
+                <span class="tag">Reverse Engineering</span>
+              </div>
+              <h3 class="card-title">2D Game Mechanics & Custom Server Tooling</h3>
+              <p class="card-description">
+                Experimental game development prototypes and custom server-side scripts focused on responsive player
+                physics, combat mechanics, and data handling.
+              </p>
+              <div class="card-links">
+                <a href="#contact" class="link-item" aria-label="View live demo of Game Mechanics">
+                  <span>Live Demo</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container">
+
+        <div class="contact-card">
+          <div class="contact-header">
+            <span class="section-tag">Let's Connect</span>
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-desc">
+              Looking to collaborate on a full-stack build, talk shop about systems and security, or discuss an
+              opportunity? Drop a direct message below.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-info">
+
+              <a href="mailto:anthonycayana45@gmail.com" class="info-card">
+                <div class="info-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="info-details">
+                  <span class="info-label">Email</span>
+                  <span class="info-value">anthonycayana45@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="https://github.com/anthonyCayana45-del/Portfolio" target="_blank" rel="noopener noreferrer"
+                class="info-card">
+                <div class="info-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                    </path>
+                  </svg>
+                </div>
+                <div class="info-details">
+                  <span class="info-label">GitHub</span>
+                  <span class="info-value">github.com/anthonyCayana45-del</span>
+                </div>
+              </a>
+
+              <a href="https://www.linkedin.com/in/anthony-cayana-8a71b9444/" target="_blank" rel="noopener noreferrer"
+                class="info-card">
+                <div class="info-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </div>
+                <div class="info-details">
+                  <span class="info-label">LinkedIn</span>
+                  <span class="info-value">linkedin.com/in/anthony-cayana</span>
+                </div>
+              </a>
+
+            </div>
+
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <label for="nameInput">Full Name</label>
+                <input type="text" id="nameInput" name="name" placeholder="e.g. Alex Morgan" required>
+              </div>
+
+              <div class="form-group">
+                <label for="emailInput">Email Address</label>
+                <input type="email" id="emailInput" name="email" placeholder="alex@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="messageInput">Your Message</label>
+                <textarea id="messageInput" name="message" rows="4"
+                  placeholder="Tell me about what we're building or solving..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                <span>Send Message</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <div class="form-feedback" id="formFeedback" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-brand">Anthony<span class="logo-accent">.dev</span></span>
+        <p class="footer-copy">&copy; 2026 Anthony. All rights reserved.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about" class="footer-link">About</a>
+        <a href="#projects" class="footer-link">Projects</a>
+        <a href="#contact" class="footer-link">Contact</a>
+      </div>
+
+      <a href="#about" class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
